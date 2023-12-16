@@ -1,0 +1,208 @@
+.marketing_block_included {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	transition: box-shadow 0.25s;
+	position: relative;
+}
+
+.marketing_block_included .amount input {
+	box-shadow: initial !important;
+	background: #fafafa !important;
+}
+
+
+/* Shares Donation */
+
+.marketing_block_included .type_shares {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.marketing_block_included .type_shares .amount {
+	margin-right: 10px;
+	flex-grow: 1;
+}
+
+.marketing_block_included .type_shares .amount input {
+	box-shadow: initial !important;
+	background: #f8f8f8 !important;
+}
+
+
+/* Spinner */
+
+.marketing_block_included .type_shares .input_spinner {
+	display: flex;
+	max-width: 150px;
+	margin: 0 auto 0 auto;
+}
+
+.marketing_block_included .type_shares .input_spinner input {
+	margin: 0 5px 0 5px;
+	border-radius: 3px;
+}
+
+
+/* Buttons */
+
+.marketing_block_included .buttons {
+	width: calc(100% + 10px);
+	margin: 10px 0 0 0;
+	display: flex;
+	min-height: 35px;
+}
+
+.marketing_block_included .buttons>div {
+	margin-left: 10px;
+	height: 40px;
+}
+
+.marketing_block_included .buttons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+	width: 40px;
+	height: 100%;
+}
+
+.marketing_block_included .buttons .large {
+	flex-grow: 1;
+}
+
+.marketing_block_included .buttons .large a {
+	width: 100%;
+}
+
+.marketing_block_included .buttons .completed {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: rgb(143, 200, 0);
+	background: linear-gradient(225deg, rgba(143, 200, 0, 1) 0%, rgba(122, 163, 0, 1) 100%);
+	width: 100%;
+	color: white !important;
+	border-radius: 3px;
+}
+
+.marketing_block_included .buttons .in_cart {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: #eee;
+	width: 100%;
+	color: #707070;
+	border-radius: 3px;
+	padding: 0 10px 0 10px;
+	margin-top: -7px;
+}
+
+.marketing_block_included .buttons .in_cart span {
+	flex-grow: 1;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.marketing_block_included .buttons .in_cart div {
+	cursor: pointer;
+}
+
+
+/* Progress Bar */
+
+.marketing_block_included .progress_bar {
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+	background: #f4f4f4;
+	box-shadow: initial;
+	border-radius: 3px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #404040 !important;
+}
+
+.marketing_block_included .progress_bar b {
+	position: absolute;
+	display: block;
+	z-index: 100;
+}
+
+.marketing_block_included .progress_bar .progress_content {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 30px;
+	background: rgb(157, 213, 58);
+	background: linear-gradient(225deg, rgba(157, 213, 58, 1) 0%, rgba(124, 188, 10, 1) 100%);
+	border-bottom: 1px solid #4d9c4f;
+}
+
+
+/* Labels */
+
+.marketing_block_included .labels {
+	text-align: center;
+	margin: 0 0 5px 0;
+}
+
+.marketing_block_included .labels label {
+	display: inline-block;
+	cursor: pointer;
+	margin: 4px;
+	border: 1px solid #ccc;
+	padding: 10px 15px 10px 15px;
+	border-radius: 3px;
+	transition: background 0.25s;
+	font-weight: normal;
+}
+
+.marketing_block_included .labels label:hover {
+	background: #eee;
+}
+
+
+/* Amount */
+
+.marketing_block_included .amount {
+	position: relative;
+	line-height: 1;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.marketing_block_included .amount input {
+	border-radius: 3px;
+	padding: 7px 70px 7px 7px;
+	font-size: 16px;
+	border: 0;
+}
+
+.marketing_block_included .amount span {
+	color: #808080;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	z-index: 10;
+}
+
+.marketing_block_included .amount i {
+	font-style: normal;
+	color: #ccc;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	z-index: 10;
+}

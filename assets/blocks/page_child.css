@@ -1,0 +1,84 @@
+.generic1_block {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #c8c8c8;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+	transition: box-shadow 0.25s !important;
+}
+
+.generic1_block:hover {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+}
+
+
+/* Image Container */
+
+.generic1_block .image_container {
+	width: 100%;
+	padding: 40%;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 3px;
+	position: relative;
+}
+
+
+/* Overlay */
+
+.generic1_block .image_container .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, .35);
+	opacity: 0;
+	transition: opacity 0.35s ease;
+}
+
+.generic1_block .image_container .overlay div {
+	background: #404040;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	border-radius: 3px;
+	position: relative;
+	left: -20px;
+	transition: left 0.35s ease;
+}
+
+.generic1_block:hover .image_container .overlay {
+	opacity: 1;
+}
+
+.generic1_block:hover .image_container .overlay div {
+	left: 0px;
+	background: #0a6206;
+}
+
+
+/* Content Container */
+
+.generic1_block .content_container h2 {
+	width: 100%;
+	margin: 10px 0px 0 0px;
+	padding: 0px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.generic1_block:hover .content_container h2 {
+	color: #0f7f0b;
+}
+
+.generic1_block .content_container small {
+	width: 100%;
+	font-size: 11px;
+	color: #909090;
+}

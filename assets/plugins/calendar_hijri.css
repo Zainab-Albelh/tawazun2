@@ -1,0 +1,200 @@
+.calendar {
+	width: 302px;
+	cursor: default;
+	background: #fff;
+	border: 1px solid #c8c8c8;
+	border-top:0px;
+    box-shadow:0 0px 5px rgba(0,0,0,.2);
+	padding:10px;
+	font-family:tahoma;
+	z-index:100 !important;
+	position:relative;
+}
+.calendar .month-field {
+	width: 120px !important;
+	margin:0px !important;
+	padding:0px !important;
+}
+.calendar .year-field {
+	width: 60px !important;
+	text-align:center !important;
+	margin:0px !important;
+	padding:0px !important;
+}
+.calendar .header-button,
+.calendar .setting-button,
+.calendar .weekday-row div,
+.calendar .date-grid div {
+	display: inline-block;
+	text-align: center;
+}
+.calendar .header-row {
+	margin-top:-10px;
+}
+.calendar .weekday-row div {
+	margin:-20px 0px 0px 0px;
+}
+.calendar .weekday-row div,
+.calendar .date-grid div {
+	vertical-align: middle;
+}
+.calendar .weekday-row div {
+	font-size:9px;
+	font-weight:bold;
+	color:#909090 !important;	
+}
+.calendar .setting-row {
+	color:#909090;
+}
+.calendar .header-button:active,
+.calendar .header-button.active:active {
+	color: #259;
+}
+.calendar .header-button.active {
+	color: #fff;
+}
+.calendar .setting-button:active,
+.calendar .setting-button.active:active {
+	color: #2b7;
+	background: #cfc;
+}
+.calendar .setting-button.active {
+	color: #fff;
+	background: #4d9;
+}
+.calendar .setting-button.disabled {
+	color: #777;
+	background: #1a6;
+	pointer-events: none;
+}
+.calendar .header-button {
+	width: 16px;
+}
+.calendar .setting-button {
+	width: 40px;
+}
+.calendar .weekday-row div,
+.calendar .date-grid .excluded-date {
+	width: 40px;
+}
+.calendar .date-grid .normal-date {
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px 0px;
+	background:#f2f2f2;
+	color:#656565;
+}
+.calendar .normal-date {
+	color: #555;
+}
+.calendar .date-grid .normal-date:hover {
+	background: #e2e2e2;
+	cursor:pointer;
+}
+.calendar .date-grid .selected-date:hover {
+	background: #444444;
+	cursor:pointer;
+}
+.calendar .friday-date {
+	color: #292;
+}
+.calendar .sunday-date {
+	color: #c22;
+}
+.calendar .date-grid .excluded-date {
+	line-height: 30px;
+	background:#f7f7f7;
+	color:#c1c1c1;
+}
+.calendar .date-grid .current-date {
+	font-weight:bold;
+}
+.calendar .date-grid .specialz-date {
+	font-weight:bold;
+}
+.calendar .date-grid .selected-date {
+	color: #fff;
+	background: #444444;
+}
+.calendar .header-button[title=Show] { /* Hide Settings Button */
+	display:none !important;
+}
+.date_field {
+	width:calc(100% - 35px) !important;
+}
+.hijri_button {
+	float:right;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+	width:30px;
+	height:30px;
+	margin:0px 0px 0px 5px !important;
+	padding:6px 0px 0px 0px !important;
+	line-height:1 !important;
+	cursor:pointer;
+	border-radius:2px;
+	color:#909090;
+	text-align:center;
+	font-size:15px;
+	border:1px solid #c8c8c8;
+}
+.hijri_button:hover {
+	color:#606060;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+}
+.hijri_field {
+	line-height: 1;
+	font-size: 10px;
+	color:#808080;
+	text-align: left;
+	margin: -19px auto 0 30px;
+	pointer-events: none;
+}
+.hijri_container {
+	position:absolute;
+}
+.pika-hijri-next {
+    cursor: pointer;
+    position: relative;
+	top:8px;
+	left:2px;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 30px;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    opacity: .5;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==');
+}
+.pika-hijri-prev {
+    cursor: pointer;
+    position: relative;
+	top:8px;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 30px;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    opacity: .5;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
+}

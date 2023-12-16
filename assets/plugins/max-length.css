@@ -1,0 +1,17 @@
+.max-length {
+	direction: ltr;
+	display: none;
+	padding: 3px 5px 3px 5px;
+	position: absolute;
+	top: -30px;
+	right: 0;
+	z-index: 1;
+	font-size: 11px;
+	border-radius: 3px;
+	background: blue;
+}
+
+.max-length:lang(ar) {
+	right: initial;
+	left: 0;
+}

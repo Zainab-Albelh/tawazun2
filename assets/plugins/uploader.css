@@ -1,0 +1,145 @@
+/* ===== Images Uploader ===== */
+
+[images-containemnt] label input {
+	display: none !important;
+}
+
+[images-containemnt] .images_sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+[images-containemnt] .images_sortable li {
+	float: right;
+	text-align: center;
+	position: relative;
+	margin: 5px 0 0 5px;
+}
+
+[images-containemnt] .images_sortable li .remove_image {
+	border-radius: 3px;
+	padding: 0px;
+	margin: 0px;
+	width: 25px;
+	height: 25px;
+	top: 5px;
+	right: 5px;
+	position: absolute;
+	background: #d23f3f;
+	color: white;
+	border: 0px;
+}
+
+[images-containemnt] .images_sortable img {
+	height: 100px;
+	border-radius: 3px;
+	border: 1px solid #909090;
+}
+
+/* ===== Files Uploader ===== */
+
+ul[json-custom-data] {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: calc(100% - 32px);
+}
+
+ul[json-custom-data] li {
+	margin-top: 10px;
+	background: #f8f8f8;
+	padding: 5px;
+	border: 1px solid #c8c8c8;
+	border-top: 6px solid #404040;
+	border-radius: 3px;
+	position: relative;
+}
+
+ul[json-custom-data] li input[type=file] {
+	margin: 5px 0px 0px 0px;
+	width: 100%;
+}
+
+ul[json-custom-data] li input[type=text],
+ul[json-custom-data] li input[type=number],
+ul[json-custom-data] li input[type=date],
+ul[json-custom-data] li select {
+	margin: 5px 0px 0px 0px;
+	width: 100%;
+	padding: 0px 10px 0px 10px;
+}
+
+ul[json-custom-data] li > span {
+	display: inline-block;
+	width: calc(25% - 10px);
+	margin: 5px;
+}
+
+ul[json-custom-data] li div[toggled-data] {
+	display: inline;
+}
+
+ul[json-custom-data] li > span.double-width {
+	width: calc(50% - 10px);
+}
+
+ul[json-custom-data] li .hijri_field {
+	display: none;
+}
+
+ul[json-custom-data] li .hijri_button {
+	margin: 5px 0px 0px 5px !important;
+}
+
+td[images-containemnt] ul {
+	float: right;
+	margin-bottom: -10px;
+}
+
+@media screen and (min-width:768px) {
+	ul[json-custom-data] .download_button {
+		position: relative;
+		top: -5px;
+		margin-bottom: -10px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	ul[json-custom-data] li>span {
+		display: inline-block;
+		width: calc(100% - 10px) !important;
+		margin: 5px;
+	}
+}
+
+.remove_data {
+	border-radius: 3px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	width: 25px;
+	height: 25px;
+	background: #d23f3f;
+	color: white;
+	margin-right: 10px;
+	position: absolute;
+	top: -5px;
+	left: -35px;
+}
+
+.add_data {
+	border-radius: 3px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	width: 26px;
+	height: 26px;
+	background: #404040;
+	color: white;
+	margin-right: 10px;
+	position: absolute;
+	top: 25px;
+	left: -35px;
+}
